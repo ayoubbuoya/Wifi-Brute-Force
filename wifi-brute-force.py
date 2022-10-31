@@ -43,7 +43,7 @@ else:
     print("Available Wifi Nteworks : ")
     print(ssids)
     # choose ssid
-    ssid = "Buoya"
+    ssid = str(input("Enter Name Of SSID : "))
     passwords = get_passwords_from_file("passwords.txt")
     for password in passwords:
         print(f"Try To Connect To {ssid} With {password}....")
